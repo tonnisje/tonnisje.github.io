@@ -1,14 +1,3 @@
-function displayTime() {
-    document.getElementById('digit-clock').innerHTML = "Current Time: " + new Date();
-}
-
-if (document.cookie.indexOf("username") <0 ){
-    alert('Welcome to my homepage for the first time!');
-}else
-    alert("Welcome back! Your last visit was " + displayTime);
-
-var lastVisit = getCookie("lastVisit");
-
 if (lastVisit == ""){
     alert('Welcome to my homepage for the first time!');
 }else
