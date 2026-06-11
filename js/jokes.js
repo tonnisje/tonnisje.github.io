@@ -1,8 +1,8 @@
 function getJoke() {
     $.get(
-        "https://v2.jokeapi.dev/joke/Programming?type=single",
+        "https://v2.jokeapi.dev/joke/Any?type=single",
         function(result){
-            $("#joke").html("A programming joke of the day: " + result.joke);
+            $("#joke").html("A new joke every minute: " + result.joke);
         }
     );
 }

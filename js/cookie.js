@@ -3,4 +3,4 @@ if (document.cookie.indexOf("username") <0 ){
 }else
     alert("Welcome back! Your last visit was " + document.cookie);
 
-document.cookie = "lastVisit=" + new Date().toString() + ";path=/";
+document.cookie = new Date().toString();

@@ -44,18 +44,22 @@
             <hr>
             <b>Experimenting with JavaScript Code</b><br>
             <i>Inlined JavaScript</i>
-            <div id="date" onclick="document.getElementById('date').innerHTML = Date()">Click to Show Date()</div>
+            <!-- <div id="date" onclick="document.getElementById('date').innerHTML = Date()">Click to Show Date()</div> -->
 
             <div id="digit-clock"></div>
             <canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
 
 
-            <div id="email" onclick="showhideEmail()">Show My Email</div>
-
             <button onclick="changeColor()">Change Background</button>
+
             <script>
               function changeColor() {
-                  document.body.style.backgroundColor = "#d3d3d3";
+                  if (document.body.style.backgroundColor === "white" ||
+                      document.body.style.backgroundColor === "") {
+                      document.body.style.backgroundColor = "#d3d3d3";
+                  } else {
+                      document.body.style.backgroundColor = "white";
+                  }
               }
             </script>
 
@@ -102,7 +106,7 @@
                   I am not responsible for their content.
                   </p>
 
-                  <h3>Programming Joke</h3>
+                  <h3>Random Joke</h3>
                   <div id="joke"></div>
                   
                   
