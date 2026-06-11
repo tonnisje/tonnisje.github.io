@@ -76,7 +76,7 @@
 
 
             <hr>
-            <b>AJAX Demo</b>
+              <b>AJAX Demo</b>  
             <div>
                     Your input: <input name="data" onkeyup="console.log('You have pressed a key')" id="data">
                     <input class="button round" type="button" value="Ajax Echo" onclick="getEcho()">
@@ -84,6 +84,27 @@
                     <input class="button round" type="button" value="JQuery Ajax POST Echo" onclick="jQueryAjaxPost()">
                     <input class="button round" type="button" value="Guess Age" onclick="guessAge($('#data').val())">
                     <div id="response"></div>
+            </div>
+                        
+            <hr>
+              <b>API Calls</b>
+            <div>
+                  <p>
+                  Disclaimer:
+                  The jokes and images below are generated
+                  by third-party public APIs.
+                  I am not responsible for their content.
+                  </p>
+
+                  <h3>Programming Joke</h3>
+                  <div id="joke"></div>
+                  <script src="js/jokes.js"></script>
+                  
+                  <h3>Random Dog</h3>
+                  <img id="dogImage" width="300">
+                  <script src="js/dogs.js"></script>
+
+                  
             </div>
 
             <div>
@@ -193,12 +214,7 @@
 
 </script>
 
-<script>
-  if (document.cookie.indexOf("username") <0 ){
-    alert('no username in cookie, set a new one');
-    document.cookie = "username=tonnisje";
-  }else
-    alert("my cookie: " +document.cookie);
-</script>
+<script src="js/cookie.js"></script>
+
 
 </html>
