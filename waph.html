@@ -62,39 +62,6 @@
                   }
               }
             </script>
-
-
-            <hr>
-            <b>Interaction With Forms</b>
-            <div>
-                <i>Form with an HTTP GET Request</i>
-                <form action="/echo.php" method="GET">
-                    Your input: <input name="data" onkeyup="console.log('You have pressed a key')">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-            
-            <hr>
-            <b>Interaction With Forms</b>
-            <div>
-                <i>Form with an HTTP POST Request</i>
-                <form action="/echo.php" method="POST">
-                    Your input: <input name="data" onkeyup="console.log('You have pressed a key')">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-
-            <hr>
-              <b>AJAX Demo</b>  
-            <div>
-                    Your input: <input name="data" onkeyup="console.log('You have pressed a key')" id="data">
-                    <input class="button round" type="button" value="Ajax Echo" onclick="getEcho()">
-                    <input class="button round" type="button" value="JQuery Ajax GET Echo" onclick="jQueryAjax()">
-                    <input class="button round" type="button" value="JQuery Ajax POST Echo" onclick="jQueryAjaxPost()">
-                    <input class="button round" type="button" value="Guess Age" onclick="guessAge($('#data').val())">
-                    <div id="response"></div>
-            </div>
                         
             <hr>
               <b>API Calls</b>
@@ -113,8 +80,6 @@
                   <h3>Random Dog</h3>
                   <img id="dogImage" width="300">
                   
-
-
             </div>
 
             <hr>
@@ -134,15 +99,10 @@
                   W3Schools template
               </a>
             </div>
-            
-
-
-            
-          </div>
-          
+  
+          </div>        
           
         </div>
-
 
 </div>
 
@@ -176,7 +136,7 @@
     setInterval(displayTime, 500);
 </script>
 
-<script>
+<!-- <script>
 
     function getEcho() {
         var input = document.getElementById("data").value;
@@ -196,9 +156,9 @@
         xhttp.send();
         document.getElementById("data").value = "";
     }
-</script>
+</script> -->
 
-<script>
+<!-- <script>
     function jQueryAjax() {
         var input = $("#data").val();
         if (input.length == 0) return;
@@ -227,7 +187,7 @@
         $("#response").html("Hi " + name + ", your age should be " + result.age);
     }
 
-</script>
+</script> -->
 
 
 
